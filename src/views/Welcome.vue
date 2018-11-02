@@ -8,17 +8,18 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
-  methods:{
-    goIn:function(){
-      this.$router.push('/home');
+  export default {
+    data(){
+        return{
+            msg: String
+        }
+    },
+    methods:{
+        goIn:function(){
+        this.$router.push('/home');
+        }
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
