@@ -43,5 +43,6 @@
     color: #fff;
     border: 1px solid #fff;
     display: block;
+    cursor: pointer;
   }
 </style>
