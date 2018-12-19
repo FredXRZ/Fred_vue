@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "webpack-dev-server --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -17,6 +17,15 @@
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "node-sass": "^4.11.0",
+    "sass": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.26.1",
     "webpack-dev-server": "^3.1.10"

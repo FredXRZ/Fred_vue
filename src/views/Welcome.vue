@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <Header ></Header>
     <div class="home_content">
       <img class="home_img" src="../assets/logo.png" alt="">
       <a @click="goIn" class="run_in_btn">进入</a>
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+  import Header from './../components/Header';
   export default {
     data(){
         return{
@@ -18,6 +20,9 @@
         goIn:function(){
         this.$router.push('/home');
         }
+    },
+    components:{
+      Header
     }
   }
 </script>
@@ -28,9 +33,9 @@
     width: 100%;
     height: 100%;
     background: #358;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
   .home_img{
     width: 300px;
