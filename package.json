@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "webpack-dev-server --open",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -26,6 +26,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
+    "vue-loader": "^15.4.2",
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.26.1",
     "webpack-dev-server": "^3.1.10"

@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const htmlWebpackPlugin = require('html-webpack-plugin');
 console.log(path)
 module.exports = {
     entry:'./src/main.js',
@@ -8,10 +9,14 @@ module.exports = {
         path:path.resolve(__dirname,'dist'),
         filename:"js/[name].js"
     },
+    devServer: {
+        contentBase: path.join(__dirname, "dist")
+    },
     plugins: [
         // make sure to include the plugin for the magic
         new VueLoaderPlugin()
     ],
+    mode:'development',
     module:{
         rules:[
             {
@@ -71,7 +76,7 @@ module.exports = {
         extensions: ['.js', '.vue', '.json'],//自动解析确定的拓展名,使导入模块时不带拓展名
         alias: {// 创建import或require的别名
         //       'vue': 'vue/dist/vue.js',
-        'vue$': 'dist/vue.esm.js',
+        'vue$': 'vue/dist/vue.esm.js',
         '@': path.resolve(__dirname,'dist'),
         }
     },
