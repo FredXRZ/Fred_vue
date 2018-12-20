@@ -22,7 +22,7 @@ export default {
         height: 44px;
         line-height: 44px;
         display:flex;
-        fonsize:14px;
+        font-size:14px;
         background: #d44439;
         .tab_items{
             // 如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）
