@@ -1,12 +1,12 @@
 <template>
     <div class="tab" >
-        <router-link tag="div" class="tab_items" to="/home" >
+        <router-link tag="div" class="tab_items" to="/" >
             <span>推荐</span>
         </router-link>
         <router-link tag="div" class="tab_items" to="/about" >
             <span>排行</span>
         </router-link>
-        <router-link tag="div" class="tab_items" to="/" >
+        <router-link tag="div" class="tab_items" to="/home" >
             <span>歌手</span>
         </router-link>
     </div>

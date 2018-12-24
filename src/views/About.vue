@@ -17,6 +17,9 @@
         showList:true
       }
     },
+    beforeCreate(){
+      // console.log("beforeCreate")
+    },
     methods:{
       changeMessage:function(){
         this.msg = `I have changed my message!`
